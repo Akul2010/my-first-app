@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    iframe {
+        width: 100%;
+        height: 65%;
+        border: 0px;
+    }
+
+</style>
+</head>
+
+<body>
+    <h1>Covid Stats</h1>
+    <form method="POST">
+        <label> Enter a country name:</label>
+        <br><br>
+        <input type="text" name="text" placeholder="Country Name">
+    </form>
+    <iframe src="{{ image }}"></iframe>
+
+    <p>You have {{ count }} visitors.</p>
+</body>
+</html>
